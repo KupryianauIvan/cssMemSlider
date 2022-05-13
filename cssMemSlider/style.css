@@ -52,30 +52,34 @@ body {
 .slider__text {
   color: #FFF;
 }
+.slider__radio {
+  display: flex;
+}
 input[type="radio"] {
-  position: relative;
+  display: none;
 }
-input[type="radio"]:after {
+.slide__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: .5rem;
+}
+label {
   display: inline-block;
-  content: '';
-  width: 1rem;
-  height: 1rem;
-  border-radius: 1.2rem;
-  background-color: var(--radio-bg);
-  border: .2rem solid var(--radio-bg);
-  transition: all .2s ease-in;
-}
-input[type="radio"]:hover:after {
-  background-color: var(--radio-hover);
-  border-color: var(--radio-hover);
-}
-input[type="radio"]:checked:after {
-  background-color: var(--radio-checked-bg);
-  border: .2rem solid var(--radio-bg);
-}
-input[type="radio"]:checked:hover:after {
-  border-color: var(--radio-hover);
-}
-input[type="radio"]:hover {
   cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 2.5rem;
+  line-height: 3.4rem;
+  user-select: none;
+  background: var(--radio-bg);
+  border: .2rem solid var(--radio-bg);
+  border-radius: 1.5rem;
+  transition: all .2s ease-in;
+  color: transparent;
+}
+input[type="radio"]:checked + label {
+  background: var(--radio-checked-bg);
+}
+label:hover  {
+  border-color: var(--radio-hover);
 }
