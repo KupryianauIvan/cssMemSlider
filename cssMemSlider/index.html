@@ -10,40 +10,39 @@
 </head>
 <body>
   <div class="container">
-    <div class="slider">
-      <div class="slider__slides">
-        <div class="slide">
-          <img src="https://via.placeholder.com/300" alt="slide-1">
-        </div>
+    <input class="radio-1" type="radio" name="radio" id="radio-1"></input>
+    <input class="radio-2" type="radio" name="radio" id="radio-2"></input>
+    <input class="radio-3" type="radio" name="radio" id="radio-3"></input>
+    <input class="radio-4" type="radio" name="radio" id="radio-4"></input>
+    <div class="content_wrapper">
+      <div class="slider__text"> 
+        <p class="text text-1">Don't hurry up, or you will pass the lunch.</p> 
+        <p class="text text-2">Don't forget, you're beautiful.</p> 
+        <p class="text text-3">The beauty is inside you.</p> 
+        <p class="text text-4">What goes around comes around.</p> 
       </div>
-      <div class="slider__content">
-        <div class="slider__text"> 
-          <p>I'm the best of the best!</p> 
-        </div>
-        <div class="slider__radio">
-          <div class="slide__wrapper">
-            <input type="radio" name="radio" id="radio-1"></input>
-            <label for="radio-1">1</label>
-          </div>
-          <div class="slide__wrapper">
-            <input type="radio" name="radio" id="radio-2"></input>
-            <label for="radio-2">2</label>
-          </div>
-          <div class="slide__wrapper">
-            <input type="radio" name="radio" id="radio-3"></input>
-            <label for="radio-3">3</label>
-          </div>
-          <div class="slide__wrapper">
-            <input type="radio" name="radio" id="radio-4"></input>
-            <label for="radio-4">4</label>
-          </div>
-            <!-- <input type="radio" name="radio" id="radio-2"></input>
-            <input type="radio" name="radio" id="radio-3"></input>
-            <input type="radio" name="radio" id="radio-4"></input> -->
-          </fieldset>
-        </div>
+      <div class="slider__controls">
+        <label for="radio-1">
+          <div class="inner"></div>
+        </label>
+        <label for="radio-2">
+          <div class="inner"></div>
+        </label>
+        <label for="radio-3">
+          <div class="inner"></div>
+        </label>
+        <label for="radio-4">
+          <div class="inner"></div>
+        </label>
       </div>
+      </div>
+    <div class="slider__slides">
+      <img class="slide slide-1" src="../cssMemSlider/src/assets/picture-1.jpg" alt="slide-1">
+      <img class="slide slide-2" src="../cssMemSlider/src/assets/picture-2.jpg" alt="slide-2">
+      <img class="slide slide-3" src="../cssMemSlider/src/assets/picture-3.jpg" alt="slide-3">
+      <img class="slide slide-4" src="../cssMemSlider/src/assets/picture-4.jpg" alt="slide-4">
     </div>
+    
   </div>
 </body>
 </html>
